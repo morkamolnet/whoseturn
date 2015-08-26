@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		title whose turn is it?
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		link(href='css/bootstrap.min.css', type='text/css', rel='stylesheet')
+		link(href='css/flat-ui.css', type='text/css', rel='stylesheet')
+		link(href='css/font-awesome.min.css', type='text/css', rel='stylesheet')
+		link(href='css/style.css', type='text/css', rel='stylesheet')
+		
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='js/flat-ui.min.js')
+		script(type='text/javascript', src='js/js.cookie.js')
+		script(type='text/javascript', src='js/script.js')
+	body
+		header
+			.container
+				.row
+					.col-lg-12
+						img.img-responsive(src="images/beer.png", style="height:150px;" alt='')
+						a(name="list")
+						.intro-text
+							span.name Whose turn is it?
+							hr.beer-hr
+				.row
+					.col-xs-12
+						.todo
+							ul#users
+		section
+				.row
+					.container
+						.tile
+							.form-group
+								select.form-control.select.select-primary.select-lg(data-toggle='select', id="selectopt")
+									option(value='', selected='') Välj
+							a(href="#list")
+								img.tile-image.big-illustration(src="images/check-icon.png", alt='', id="post")
+							h3.tile-title Lägg till
+		footer.text-center
+			.footer-below
+				.container
+					.row
